@@ -14,7 +14,7 @@
     <issue>https://github.com/floatinghotpot/cordova-plugin-facebookads/issues</issue>
 
   <engines>
-    <engine name="cordova" version=">=6.4.0"/>
+    <engine name="cordova" version=">=7.1.0"/>
     <engine name="cordova-android" version=">=6.0.0"/>
     <engine name="cordova-ios" version=">=4.3.0"/>
   </engines>
@@ -43,8 +43,10 @@
 			  <uses-permission android:name="android.permission.INTERNET" />
 			  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
+
+	<preference name="PLAY_SERVICES_VERSION" default="+"/>
           
-		<framework src="com.android.support:support-v4:+" />
+	<framework src="com.android.support:support-v4:$PLAY_SERVICES_VERSION" />
         <framework src="src/android/android-support.gradle" custom="true" type="gradleReference" />
      </platform>
      
